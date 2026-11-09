@@ -14,6 +14,16 @@ function validatePromoCode(promo) {
   return /^SUMMER$/i.test(promo || "");
 }
 
+function formatPhoneNumber(phone) {
+  const regex = /^(\d{3})[-.]?(\d{3})[-.]?(\d{4})$/;
+
+  if (!regex.test(phone)) {
+    return null;
+  }
+
+  return phone.replace(regex, "($1) $2-$3");
+}
+
 const sampleUsers = [
   { name: "Alex Johnson", username: "alex_j", phone: "555-234-5678", promoCode: "SUMMER" },
   { name: "B", username: "cool_user_123", phone: "555.345.6789", promoCode: "summer" },
@@ -24,9 +34,7 @@ const sampleUsers = [
 ];
 
 for (const user of sampleUsers) {
-  console.log("Name:", validateName(user.name));
-  console.log("Username:", validateUsername(user.username));
-  console.log("Phone:", validatePhone(user.phone));
-  console.log("Promo:", validatePromoCode(user.promoCode));
+  console.log("Original:", user.phone);
+  console.log("Formatted:", formatPhoneNumber(user.phone));
   console.log("--------------------");
 }
