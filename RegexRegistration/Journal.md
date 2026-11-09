@@ -9,3 +9,7 @@ I created phone and promo code validation functions. The phone regex checks for 
 # Phase 3
 
 I created a function that uses capturing groups to separate phone numbers into three parts. I used replace() with backreferences to format valid numbers consistently. The test() method checks whether a string is valid, while capturing groups let me extract and reuse specific parts of a match.
+
+# Phase 4
+
+I created processRegistration() to combine all my validation functions. It checks each required field, collects errors, and returns either a failure message or sanitized registration data. Building the individual functions first made the final pipeline easier to organize and debug.
