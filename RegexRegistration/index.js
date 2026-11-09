@@ -60,7 +60,10 @@ const sampleUsers = [
   { name: "Charlie Brown", username: "charlie!brown", phone: "5554567890", promoCode: "SUMMER2026" },
   { name: "Dana Scully", username: "da", phone: "555-567-8901", promoCode: "SuMmEr" },
   { name: "Edward Nygma", username: "the_riddler_super_fan", phone: "555-678-901", promoCode: null },
-  { name: "Fiona Gallagher", username: "fiona_g", phone: "555-789-0123", promoCode: "" }
+  { name: "Fiona Gallagher", username: "fiona_g", phone: "555-789-0123", promoCode: "" },
+  { name: "George Smith", username: "george@123", phone: "555-123-4567", promoCode: "SUMMER" },
+  { name: "Helen Parker", username: "helen_p", phone: "555 ABC 1234", promoCode: "WINTER" }
+
 ];
 
 for (const user of sampleUsers) {

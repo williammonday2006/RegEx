@@ -13,3 +13,7 @@ I created a function that uses capturing groups to separate phone numbers into t
 # Phase 4
 
 I created processRegistration() to combine all my validation functions. It checks each required field, collects errors, and returns either a failure message or sanitized registration data. Building the individual functions first made the final pipeline easier to organize and debug.
+
+# Phase 5
+
+I tested the completed program using the sample users and two additional edge cases. The regex patterns correctly rejected invalid usernames and phone numbers while formatting valid phone numbers. I learned how anchors, character sets, quantifiers, flags, and capturing groups can be used to validate and process user input.
